@@ -37,27 +37,22 @@
       <widget class="QComboBox" name="cbType">
        <item>
         <property name="text">
-         <string>盖饭</string>
-        </property>
-       </item>
-       <item>
-        <property name="text">
-         <string>盒饭</string>
-        </property>
-       </item>
-       <item>
-        <property name="text">
-         <string>菜系</string>
-        </property>
-       </item>
-       <item>
-        <property name="text">
          <string>主食</string>
         </property>
        </item>
        <item>
         <property name="text">
-         <string>其它</string>
+         <string>饮品</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>炒菜</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>靓汤</string>
         </property>
        </item>
       </widget>

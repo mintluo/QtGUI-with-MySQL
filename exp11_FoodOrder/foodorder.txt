@@ -1,21 +1,48 @@
-INSERT INTO food (fid,fname, ftype,fprice,fhot_count,flag) VALUES (1,'ÈÈ¸ÉÃæ','Ö÷Ê³',8,40,0);
-INSERT INTO food (fid,fname, ftype,fprice,fhot_count,flag) VALUES (2,'Å£ÈâÃæ','Ö÷Ê³',12,42,0);
-INSERT INTO food (fid,fname, ftype,fprice,fhot_count,flag) VALUES (3,'ÃæÎÑ','Ö÷Ê³',2,25,0);
-INSERT INTO food (fid,fname, ftype,fprice,fhot_count,flag) VALUES (4,'Á¹Ãæ','Ö÷Ê³',8,20,0);
-INSERT INTO food (fid,fname, ftype,fprice,fhot_count,flag) VALUES (5,'Ã×·¹','Ö÷Ê³',3,20,0);
-INSERT INTO food (fid,fname, ftype,fprice,fhot_count,flag) VALUES (6,'Çå¾Æ','ÒûÆ·',2,20,1);
-INSERT INTO food (fid,fname, ftype,fprice,fhot_count,flag) VALUES (7,'µ°¾Æ','ÒûÆ·',3,30,1);
-INSERT INTO food (fid,fname, ftype,fprice,fhot_count,flag) VALUES (8,'ÂÌ¶¹ÌÀ','ÒûÆ·',3,30,1);
-INSERT INTO food (fid,fname, ftype,fprice,fhot_count,flag) VALUES (9,'Î÷¹ÏÖ­','ÒûÆ·',8,30,1);
-INSERT INTO food (fid,fname, ftype,fprice,fhot_count,flag) VALUES (10,'ÊÖËº°ü²Ë','³´²Ë',20,10,2);
-INSERT INTO food (fid,fname, ftype,fprice,fhot_count,flag) VALUES (11,'ËáÀ±Åº¶¡','³´²Ë',20,33,2);
-INSERT INTO food (fid,fname, ftype,fprice,fhot_count,flag) VALUES (12,'ÖñÍ²ÅÅ¹Ç','³´²Ë',35,20,2);
-INSERT INTO food (fid,fname, ftype,fprice,fhot_count,flag) VALUES (13,'ÅÅ¹ÇìÀÅº','³´²Ë',35,20,2);
-INSERT INTO food (fid,fname, ftype,fprice,fhot_count,flag) VALUES (14,'¼Ò³£Îä²ıÓã','³´²Ë',35,10,2);
-INSERT INTO food (fid,fname, ftype,fprice,fhot_count,flag) VALUES (15,'ºÉÏãÅ£Áø','³´²Ë',45,17,2);
-INSERT INTO food (fid,fname, ftype,fprice,fhot_count,flag) VALUES (16,'Íã¶¹Å£Èâ','³´²Ë',45,18,2);
-INSERT INTO food (fid,fname, ftype,fprice,fhot_count,flag) VALUES (17,'×ÎÈ»ÑòÈâ','³´²Ë',45,21,2);
-INSERT INTO food (fid,fname, ftype,fprice,fhot_count,flag) VALUES (18,'Ò°ÅºÌÀ','ö¦ÌÀ',55,38,3);
-INSERT INTO food (fid,fname, ftype,fprice,fhot_count,flag) VALUES (19,'º£´øÁú¹ÇÌÀ','ö¦ÌÀ',55,18,3);
-INSERT INTO food (fid,fname, ftype,fprice,fhot_count,flag) VALUES (20,'ÂÜ²·ĞÄ·ÎÌÀ','ö¦ÌÀ',55,8,3);
-INSERT INTO food (fid,fname, ftype,fprice,fhot_count,flag) VALUES (21,'ÍÁ¼¦ÌÀ','ö¦ÌÀ',55,19,3);
+create database foodorder;
+use foodorder;
+
+å»ºç«‹foodè¡¨ï¼š
+CREATE TABLE `food` (
+`fid` int(11) NOT NULL AUTO_INCREMENT,
+`fname` char(20) NOT NULL,
+`ftype` char(10) NOT NULL,
+`fprice` int(11) NOT NULL,
+`fhot_count` int(11) NOT NULL DEFAULT '0',
+`flag` int(11) NOT NULL,
+PRIMARY KEY (`fid`)
+) ENGINE=InnoDB AUTO_INCREMENT=65 DEFAULT CHARSET=utf8) ENGINE = InnoDB
+CHARACTER SET gb2312 COLLATE gb2312_chinese_ci;
+
+å»ºç«‹orderlistè¡¨ï¼š
+CREATE TABLE `orderlist` (
+`id` int(11) NOT NULL AUTO_INCREMENT,
+`fname` char(20) NOT NULL,
+`ftype` char(10) NOT NULL,
+`fprice` int(11) NOT NULL,
+`cid` int(11) NOT NULL,
+`cname` char(10) NOT NULL,
+PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=18 DEFAULT CHARSET=utf8
+#---------------------ä¸Šæ–¹å†…å®¹æ¥è‡ªæ•™æï¼Œå®é™…æ“ä½œæ˜¯åœ¨MySQL Workbenchä¸­å®Œæˆ---------------------#
+
+INSERT INTO food (fid,fname, ftype,fprice,fhot_count,flag) VALUES (1,â€™çƒ­å¹²é¢â€™,â€™ä¸»é£Ÿâ€™,8,40,0);
+INSERT INTO food (fid,fname, ftype,fprice,fhot_count,flag) VALUES (2,â€™ç‰›è‚‰é¢â€™,â€™ä¸»é£Ÿâ€™,12,42,0);
+INSERT INTO food (fid,fname, ftype,fprice,fhot_count,flag) VALUES (3,â€™é¢çªâ€™,â€™ä¸»é£Ÿâ€™,2,25,0);
+INSERT INTO food (fid,fname, ftype,fprice,fhot_count,flag) VALUES (4,â€™å‡‰é¢â€™,â€™ä¸»é£Ÿâ€™,8,20,0);
+INSERT INTO food (fid,fname, ftype,fprice,fhot_count,flag) VALUES (5,â€™ç±³é¥­â€™,â€™ä¸»é£Ÿâ€™,3,20,0);
+INSERT INTO food (fid,fname, ftype,fprice,fhot_count,flag) VALUES (6,â€™æ¸…é…’â€™,â€™é¥®å“â€™,2,20,1);
+INSERT INTO food (fid,fname, ftype,fprice,fhot_count,flag) VALUES (7,â€™è›‹é…’â€™,â€™é¥®å“â€™,3,30,1);
+INSERT INTO food (fid,fname, ftype,fprice,fhot_count,flag) VALUES (8,â€™ç»¿è±†æ±¤â€™,â€™é¥®å“â€™,3,30,1);
+INSERT INTO food (fid,fname, ftype,fprice,fhot_count,flag) VALUES (9,â€™è¥¿ç“œæ±â€™,â€™é¥®å“â€™,8,30,1);
+INSERT INTO food (fid,fname, ftype,fprice,fhot_count,flag) VALUES (10,â€™æ‰‹æ’•åŒ…èœâ€™,â€™ç‚’èœâ€™,20,10,2);
+INSERT INTO food (fid,fname, ftype,fprice,fhot_count,flag) VALUES (11,â€™é…¸è¾£è—•ä¸â€™,â€™ç‚’èœ',20,33,2);
+INSERT INTO food (fid,fname, ftype,fprice,fhot_count,flag) VALUES (12,â€™ç«¹ç­’æ’éª¨â€™,â€™ç‚’èœ',35,20,2);
+INSERT INTO food (fid,fname, ftype,fprice,fhot_count,flag) VALUES (13,â€™æ’éª¨ç‚–è—•â€™,â€™ç‚’èœ',35,20,2);
+INSERT INTO food (fid,fname, ftype,fprice,fhot_count,flag) VALUES (14,â€™å®¶å¸¸æ­¦æ˜Œé±¼â€™,â€™ç‚’èœ',35,10,2);
+INSERT INTO food (fid,fname, ftype,fprice,fhot_count,flag) VALUES (15,â€™è·é¦™ç‰›æŸ³â€™,â€™ç‚’èœ',45,17,2);
+INSERT INTO food (fid,fname, ftype,fprice,fhot_count,flag) VALUES (16,â€™è±Œè±†ç‰›è‚‰â€™,â€™ç‚’èœ',45,18,2);
+INSERT INTO food (fid,fname, ftype,fprice,fhot_count,flag) VALUES (17,â€™å­œç„¶ç¾Šè‚‰â€™,â€™ç‚’èœ',45,21,2);
+INSERT INTO food (fid,fname, ftype,fprice,fhot_count,flag) VALUES (18,â€™é‡è—•æ±¤â€™,â€™é“æ±¤',55,38,3);
+INSERT INTO food (fid,fname, ftype,fprice,fhot_count,flag) VALUES (19,â€™æµ·å¸¦æ±¤â€™,â€™é“æ±¤',55,18,3);
+INSERT INTO food (fid,fname, ftype,fprice,fhot_count,flag) VALUES (20,â€™èåœå¿ƒè‚ºæ±¤â€™,â€™é“æ±¤',55,8,3);
+INSERT INTO food (fid,fname, ftype,fprice,fhot_count,flag) VALUES (21,â€™åœŸé¸¡æ±¤â€™,â€™é“æ±¤â€™,55,19,3);

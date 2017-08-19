@@ -13,7 +13,7 @@ class dlgdetail : public QDialog
     Q_OBJECT
 
 public:
-    explicit dlgdetail(QWidget *parent = 0);
+    explicit dlgdetail(int cid,QWidget *parent = 0);
     ~dlgdetail();
 
 private slots:

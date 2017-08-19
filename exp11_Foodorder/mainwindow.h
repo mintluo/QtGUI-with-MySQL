@@ -25,6 +25,8 @@ private slots:
 
     void on_pbMain_Count_clicked();
 
+    void on_pbMain_Exit_clicked();
+
 private:
     Ui::MainWindow *ui;
     QSqlTableModel *model;

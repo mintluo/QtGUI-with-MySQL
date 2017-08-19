@@ -13,7 +13,7 @@ class dlgdelete_update : public QDialog
     Q_OBJECT
 
 public:
-    explicit dlgdelete_update(QWidget *parent = 0);
+    explicit dlgdelete_update(QString fid , QWidget *parent = 0);
     ~dlgdelete_update();
 
 private slots:
