@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ChatWidget</class>
+ <widget class="QWidget" name="ChatWidget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>775</width>
+    <height>416</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout_3">
+   <item row="0" column="0">
+    <layout class="QGridLayout" name="gridLayout_2">
+     <item row="0" column="0">
+      <layout class="QGridLayout" name="gridLayout">
+       <item row="0" column="0">
+        <widget class="QTextBrowser" name="tbShow">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+           <horstretch>0</horstretch>
+           <verstretch>2</verstretch>
+          </sizepolicy>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="0">
+        <layout class="QHBoxLayout" name="horizontalLayout_2">
+         <item>
+          <widget class="QFontComboBox" name="fontComboBox"/>
+         </item>
+         <item>
+          <widget class="QComboBox" name="comboBox">
+           <item>
+            <property name="text">
+             <string>9</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>10</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>11</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>12</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>13</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>14</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>15</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>16</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>17</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>18</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>19</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>20</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>21</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>22</string>
+            </property>
+           </item>
+          </widget>
+         </item>
+         <item>
+          <spacer name="horizontalSpacer_2">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>40</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item>
+          <widget class="QToolButton" name="textbold">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="toolTip">
+            <string>加粗</string>
+           </property>
+           <property name="autoFillBackground">
+            <bool>true</bool>
+           </property>
+           <property name="text">
+            <string>...</string>
+           </property>
+           <property name="icon">
+            <iconset resource="../../../Downloads/Linux环境下QT4图形界面与MySQL编程_程序源代码/第15章基于QT4与MySQL的局域网聊天系统设计与实现/ClientAp/Resource.qrc">
+             <normaloff>:/new/prefix1/image/textbold.png</normaloff>:/new/prefix1/image/textbold.png</iconset>
+           </property>
+           <property name="checkable">
+            <bool>true</bool>
+           </property>
+           <property name="autoRaise">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QToolButton" name="textitalic">
+           <property name="toolTip">
+            <string>倾斜</string>
+           </property>
+           <property name="text">
+            <string>...</string>
+           </property>
+           <property name="icon">
+            <iconset resource="../../../Downloads/Linux环境下QT4图形界面与MySQL编程_程序源代码/第15章基于QT4与MySQL的局域网聊天系统设计与实现/ClientAp/Resource.qrc">
+             <normaloff>:/new/prefix1/image/textitalic.png</normaloff>:/new/prefix1/image/textitalic.png</iconset>
+           </property>
+           <property name="checkable">
+            <bool>true</bool>
+           </property>
+           <property name="autoRaise">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QToolButton" name="textunderline">
+           <property name="toolTip">
+            <string>下划线</string>
+           </property>
+           <property name="text">
+            <string>...</string>
+           </property>
+           <property name="icon">
+            <iconset resource="../../../Downloads/Linux环境下QT4图形界面与MySQL编程_程序源代码/第15章基于QT4与MySQL的局域网聊天系统设计与实现/ClientAp/Resource.qrc">
+             <normaloff>:/new/prefix1/image/textunder.png</normaloff>:/new/prefix1/image/textunder.png</iconset>
+           </property>
+           <property name="checkable">
+            <bool>true</bool>
+           </property>
+           <property name="autoRaise">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QToolButton" name="textcolor">
+           <property name="toolTip">
+            <string>颜色</string>
+           </property>
+           <property name="text">
+            <string>...</string>
+           </property>
+           <property name="icon">
+            <iconset resource="../../../Downloads/Linux环境下QT4图形界面与MySQL编程_程序源代码/第15章基于QT4与MySQL的局域网聊天系统设计与实现/ClientAp/Resource.qrc">
+             <normaloff>:/new/prefix1/image/textcolor.png</normaloff>:/new/prefix1/image/textcolor.png</iconset>
+           </property>
+           <property name="autoRaise">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QToolButton" name="textSave">
+           <property name="toolTip">
+            <string>传输文件</string>
+           </property>
+           <property name="text">
+            <string>...</string>
+           </property>
+           <property name="icon">
+            <iconset resource="../../../Downloads/Linux环境下QT4图形界面与MySQL编程_程序源代码/第15章基于QT4与MySQL的局域网聊天系统设计与实现/ClientAp/Resource.qrc">
+             <normaloff>:/new/prefix1/image/fileopen.png</normaloff>:/new/prefix1/image/fileopen.png</iconset>
+           </property>
+           <property name="autoRaise">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QToolButton" name="textBin">
+           <property name="toolTip">
+            <string>清空</string>
+           </property>
+           <property name="text">
+            <string>...</string>
+           </property>
+           <property name="icon">
+            <iconset resource="../../../Downloads/Linux环境下QT4图形界面与MySQL编程_程序源代码/第15章基于QT4与MySQL的局域网聊天系统设计与实现/ClientAp/Resource.qrc">
+             <normaloff>:/new/prefix1/image/Bin (empty).png</normaloff>:/new/prefix1/image/Bin (empty).png</iconset>
+           </property>
+           <property name="autoRaise">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QToolButton" name="textHistory">
+           <property name="toolTip">
+            <string>聊天记录</string>
+           </property>
+           <property name="text">
+            <string>...</string>
+           </property>
+           <property name="icon">
+            <iconset resource="../../../Downloads/Linux环境下QT4图形界面与MySQL编程_程序源代码/第15章基于QT4与MySQL的局域网聊天系统设计与实现/ClientAp/Resource.qrc">
+             <normaloff>:/new/prefix1/image/chatHis.png</normaloff>:/new/prefix1/image/chatHis.png</iconset>
+           </property>
+           <property name="autoRaise">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item row="2" column="0">
+        <widget class="QTextEdit" name="teEdit">
+         <property name="enabled">
+          <bool>true</bool>
+         </property>
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Expanding" vsizetype="Maximum">
+           <horstretch>0</horstretch>
+           <verstretch>1</verstretch>
+          </sizepolicy>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="0">
+        <layout class="QHBoxLayout" name="horizontalLayout">
+         <item>
+          <widget class="QLabel" name="lbConn">
+           <property name="text">
+            <string>对方ip：xxx.xxx.xxx.xxx</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <spacer name="horizontalSpacer">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>40</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item>
+          <widget class="QPushButton" name="btnClose">
+           <property name="text">
+            <string>关闭</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="btnSend">
+           <property name="text">
+            <string>发送</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </item>
+     <item row="0" column="1">
+      <widget class="QTextBrowser" name="tbHistory"/>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <resources>
+  <include location="../../../Downloads/Linux环境下QT4图形界面与MySQL编程_程序源代码/第15章基于QT4与MySQL的局域网聊天系统设计与实现/ClientAp/Resource.qrc"/>
+ </resources>
+ <connections/>
+</ui>

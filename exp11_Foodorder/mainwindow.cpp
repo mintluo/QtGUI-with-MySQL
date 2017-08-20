@@ -6,6 +6,8 @@
 #include "dlgsearch.h"
 #include "dlgcount.h"
 #include <QAbstractItemView>
+#include <QFileDialog>
+#include <QDebug>
 
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
