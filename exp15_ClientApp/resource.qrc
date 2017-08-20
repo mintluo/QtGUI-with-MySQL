@@ -1,0 +1,20 @@
+<RCC>
+    <qresource prefix="/">
+        <file>resource/chatHis.png</file>
+        <file>resource/20091201_e59eb6d747cef0b2bc89nKJwRb2QIxXh.png</file>
+        <file>resource/20091201_0c5e3cb96bf053f6f8f43xlWxvBTLEnr.png</file>
+        <file>resource/20091201_b321df1d9e60373380a0IQzepnVIU3HS.png</file>
+        <file>resource/20091201_2a0f6976569659175fd3PEFlPFnrDS1R.png</file>
+        <file>resource/fileopen.png</file>
+        <file>resource/textitalic.png</file>
+        <file>resource/textbold.png</file>
+        <file>resource/textunder.png</file>
+        <file>resource/textcolor.png</file>
+        <file>resource/Floppy.png</file>
+        <file>resource/MSN-Messenger.png</file>
+        <file>resource/E-Mail.png</file>
+        <file>resource/Bin (empty).png</file>
+        <file>resource/Files.png</file>
+        <file>resource/User.png</file>
+    </qresource>
+</RCC>

@@ -22,6 +22,7 @@ private slots:
 
 private:
     Ui::Login *ui;
+    bool eventFilter(QObject *target, QEvent *event);//事件过滤器
 };
 
 #endif // LOGIN_H

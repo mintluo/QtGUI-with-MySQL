@@ -138,8 +138,8 @@
             <string>...</string>
            </property>
            <property name="icon">
-            <iconset resource="../../../Downloads/Linux环境下QT4图形界面与MySQL编程_程序源代码/第15章基于QT4与MySQL的局域网聊天系统设计与实现/ClientAp/Resource.qrc">
-             <normaloff>:/new/prefix1/image/textbold.png</normaloff>:/new/prefix1/image/textbold.png</iconset>
+            <iconset resource="resource.qrc">
+             <normaloff>:/resource/textbold.png</normaloff>:/resource/textbold.png</iconset>
            </property>
            <property name="checkable">
             <bool>true</bool>
@@ -158,8 +158,8 @@
             <string>...</string>
            </property>
            <property name="icon">
-            <iconset resource="../../../Downloads/Linux环境下QT4图形界面与MySQL编程_程序源代码/第15章基于QT4与MySQL的局域网聊天系统设计与实现/ClientAp/Resource.qrc">
-             <normaloff>:/new/prefix1/image/textitalic.png</normaloff>:/new/prefix1/image/textitalic.png</iconset>
+            <iconset resource="resource.qrc">
+             <normaloff>:/resource/textitalic.png</normaloff>:/resource/textitalic.png</iconset>
            </property>
            <property name="checkable">
             <bool>true</bool>
@@ -178,8 +178,8 @@
             <string>...</string>
            </property>
            <property name="icon">
-            <iconset resource="../../../Downloads/Linux环境下QT4图形界面与MySQL编程_程序源代码/第15章基于QT4与MySQL的局域网聊天系统设计与实现/ClientAp/Resource.qrc">
-             <normaloff>:/new/prefix1/image/textunder.png</normaloff>:/new/prefix1/image/textunder.png</iconset>
+            <iconset resource="resource.qrc">
+             <normaloff>:/resource/textunder.png</normaloff>:/resource/textunder.png</iconset>
            </property>
            <property name="checkable">
             <bool>true</bool>
@@ -198,8 +198,8 @@
             <string>...</string>
            </property>
            <property name="icon">
-            <iconset resource="../../../Downloads/Linux环境下QT4图形界面与MySQL编程_程序源代码/第15章基于QT4与MySQL的局域网聊天系统设计与实现/ClientAp/Resource.qrc">
-             <normaloff>:/new/prefix1/image/textcolor.png</normaloff>:/new/prefix1/image/textcolor.png</iconset>
+            <iconset resource="resource.qrc">
+             <normaloff>:/resource/textcolor.png</normaloff>:/resource/textcolor.png</iconset>
            </property>
            <property name="autoRaise">
             <bool>true</bool>
@@ -215,8 +215,8 @@
             <string>...</string>
            </property>
            <property name="icon">
-            <iconset resource="../../../Downloads/Linux环境下QT4图形界面与MySQL编程_程序源代码/第15章基于QT4与MySQL的局域网聊天系统设计与实现/ClientAp/Resource.qrc">
-             <normaloff>:/new/prefix1/image/fileopen.png</normaloff>:/new/prefix1/image/fileopen.png</iconset>
+            <iconset resource="resource.qrc">
+             <normaloff>:/resource/fileopen.png</normaloff>:/resource/fileopen.png</iconset>
            </property>
            <property name="autoRaise">
             <bool>true</bool>
@@ -232,8 +232,8 @@
             <string>...</string>
            </property>
            <property name="icon">
-            <iconset resource="../../../Downloads/Linux环境下QT4图形界面与MySQL编程_程序源代码/第15章基于QT4与MySQL的局域网聊天系统设计与实现/ClientAp/Resource.qrc">
-             <normaloff>:/new/prefix1/image/Bin (empty).png</normaloff>:/new/prefix1/image/Bin (empty).png</iconset>
+            <iconset resource="resource.qrc">
+             <normaloff>:/resource/Bin (empty).png</normaloff>:/resource/Bin (empty).png</iconset>
            </property>
            <property name="autoRaise">
             <bool>true</bool>
@@ -249,8 +249,8 @@
             <string>...</string>
            </property>
            <property name="icon">
-            <iconset resource="../../../Downloads/Linux环境下QT4图形界面与MySQL编程_程序源代码/第15章基于QT4与MySQL的局域网聊天系统设计与实现/ClientAp/Resource.qrc">
-             <normaloff>:/new/prefix1/image/chatHis.png</normaloff>:/new/prefix1/image/chatHis.png</iconset>
+            <iconset resource="resource.qrc">
+             <normaloff>:/resource/chatHis.png</normaloff>:/resource/chatHis.png</iconset>
            </property>
            <property name="autoRaise">
             <bool>true</bool>
@@ -320,7 +320,7 @@
   </layout>
  </widget>
  <resources>
-  <include location="../../../Downloads/Linux环境下QT4图形界面与MySQL编程_程序源代码/第15章基于QT4与MySQL的局域网聊天系统设计与实现/ClientAp/Resource.qrc"/>
+  <include location="resource.qrc"/>
  </resources>
  <connections/>
 </ui>

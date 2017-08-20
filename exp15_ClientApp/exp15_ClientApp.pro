@@ -49,3 +49,6 @@ FORMS += \
     register.ui \
     filesender.ui \
     filereceiver.ui
+
+RESOURCES += \
+    resource.qrc

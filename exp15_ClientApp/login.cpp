@@ -4,6 +4,7 @@
 #include <QtSql>
 #include <QSqlQuery>
 #include <QSqlError>
+#include <QKeyEvent>
 #include "database.h"
 #include "widget.h"
 #include "register.h"
@@ -13,6 +14,7 @@ Login::Login(QWidget *parent) :
     ui(new Ui::Login)
 {
     ui->setupUi(this);
+    ui->lePasswd->installEventFilter(this);//安装事件过滤器
 }
 
 Login::~Login()
@@ -44,7 +46,7 @@ void Login::on_btnLogin_clicked()
     database::Close();
     //打开系统主界面
     Widget *w = new Widget;
-    w->setWindowTitle(ui->leUsername->text());
+    w->SetName(ui->leUsername->text());
     w->show();
     this->close();//关闭登录界面
 }
@@ -53,4 +55,19 @@ void Login::on_btnRegister_clicked()
 {
     Register *reg = new Register;
     reg->show();
+}
+
+//事件处理  在输入时按下ctrl + enter 发送
+bool Login::eventFilter(QObject *target, QEvent *event)
+{
+    if(event->type() == QEvent::KeyPress)
+    {
+        QKeyEvent *k = static_cast<QKeyEvent *>(event);
+        if (k->key() == Qt::Key_Return)
+        {
+            on_btnLogin_clicked();
+            return true;
+        }
+    }
+    return QWidget::eventFilter(target,event);
 }

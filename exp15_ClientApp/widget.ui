@@ -51,9 +51,8 @@
          <string>昵称</string>
         </property>
         <property name="icon">
-         <iconset>
-          <normalon>:/new/prefix1/image/User.png</normalon>
-         </iconset>
+         <iconset resource="resource.qrc">
+          <normaloff>:/resource/User.png</normaloff>:/resource/User.png</iconset>
         </property>
        </column>
        <column>
@@ -68,6 +67,8 @@
   </layout>
  </widget>
  <layoutdefault spacing="6" margin="11"/>
- <resources/>
+ <resources>
+  <include location="resource.qrc"/>
+ </resources>
  <connections/>
 </ui>
