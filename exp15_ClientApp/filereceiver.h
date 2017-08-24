@@ -42,10 +42,10 @@ private:
     qint64 TotalBytes;//总共需接收的字节数
     qint64 bytesReceived;//已接收字节数
     qint64 bytesToReceive;//待接收字节数
-    qint64 fileNameSize;//文件大小
-    QString fileName;
-    QFile *localFile;
-    QByteArray inBlock;
+    qint64 fileNameSize;//文件名大小
+    QString fileName;//文件名
+    QFile *localFile;//本地文件
+    QByteArray inBlock;//数据缓冲区
 
     QTime time;
 };

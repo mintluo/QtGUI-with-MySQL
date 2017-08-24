@@ -31,6 +31,7 @@ Widget::~Widget()
 void Widget::SetName(QString name)
 {
     Name = name;
+    setWindowTitle(Name);
     sendMessage(NewParticipant);
 }
 
@@ -245,8 +246,8 @@ void Widget::on_tableWidget_doubleClicked(QModelIndex index)
     QString secretAddress = ui->tableWidget->item(index.row(),1)->text();//对方ip
         if(secretAddress == getIP())//和自己聊天
         {
-            QMessageBox::information(this,tr("警告"),tr("你在尝试和自己聊天"));
-            return;
+            //QMessageBox::information(this,tr("警告"),tr("你在尝试和自己聊天"));
+            //return;//fortest单机调试
         }
     if(list.contains(secretAddress))//聊天窗口已经存在
     {

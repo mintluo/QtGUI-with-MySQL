@@ -58,13 +58,13 @@ void FileReceiver::readMessage()
     in.setVersion(QDataStream::Qt_4_6);
 
     float useTime = time.elapsed();
-    if(bytesReceived <= qint64(sizeof(qint64)*2)){
+    if(bytesReceived <= qint64(sizeof(qint64)*2)){//如果接收到的数据小于16个字节，那么是刚开始接收数据，我们保存接收到的头文件信息
         if((fileReceiver->bytesAvailable() >= qint64(sizeof(qint64)*2)) && (fileNameSize == 0)){
-            in>>TotalBytes>>fileNameSize;
+            in>>TotalBytes>>fileNameSize;//接收数据总大小信息和文件名大小信息
             bytesReceived += sizeof(qint64)*2;
         }
         if((fileReceiver->bytesAvailable() >= fileNameSize) && (fileNameSize != 0)){
-            in>>fileName;
+            in>>fileName;//接收文件名，并建立文件
             bytesReceived +=fileNameSize;
 
             if(!localFile->open(QFile::WriteOnly)){
@@ -75,12 +75,13 @@ void FileReceiver::readMessage()
         else
             return;
     }
-    if(bytesReceived < TotalBytes){
+    if(bytesReceived < TotalBytes){//如果接收的数据小于总数据，那么写入文件
         bytesReceived += fileReceiver->bytesAvailable();
         inBlock = fileReceiver->readAll();
         localFile->write(inBlock);
         inBlock.resize(0);
     }
+    //更新进度条
     ui->progressBar->setMaximum(TotalBytes);
     ui->progressBar->setValue(bytesReceived);
     qDebug()<<bytesReceived<<"received"<<TotalBytes;
@@ -93,7 +94,7 @@ void FileReceiver::readMessage()
                                          .arg(useTime/1000,0,'f',0)//用时
                                          .arg(TotalBytes/speed/1000 - useTime/1000,0,'f',0));//剩余时间
 
-    if(bytesReceived == TotalBytes)
+    if(bytesReceived == TotalBytes)//接收数据完成时
     {
         fileReceiver->close();
         ui->FileReceiverStatusLabel->setText(tr("接收文件 %1 完毕").arg(fileName));
